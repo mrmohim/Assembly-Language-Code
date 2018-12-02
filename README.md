@@ -4,4 +4,4 @@ Assembly Language Code
 Note
 -------
 
-**IF YOU FIND ANY SEVERE BUGS PLEASE KINDLY [PULL REQUEST](https://github.com/mrmohim/WarOfWord/pulls).**
+**IF YOU FIND ANY SEVERE BUGS PLEASE KINDLY [PULL REQUEST](https://github.com/mrmohim/Assembly-Language-Code/pulls).**
