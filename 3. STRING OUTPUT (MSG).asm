@@ -1,0 +1,29 @@
+.MODEL SMALL
+.STACK 100H 
+.DATA
+MSG1 DB 'MOSHIUR RAHMAN $'
+MSG2 DB 'FAISAL KABIR $'
+.CODE
+MAIN PROC
+
+    MOV AX,@DATA   ;INITIALIZATION OF DATA SEGMENT
+    MOV DS,AX
+    
+    LEA DX,MSG1     ;Load Effective Address
+    MOV AH,9        ;PRINT FONCTION
+    INT 21H
+    
+    MOV AH,2
+    MOV DL,0DH
+    INT 21H         ;NEWLINE
+    MOV DL,0AH
+    INT 21H
+    
+    LEA DX,MSG2     ;Load Effective Address
+    MOV AH,9        ;PRINT FONCTION
+    INT 21H
+
+MOV AH,4CH
+INT 21H
+MAIN ENDP
+END MAIN
